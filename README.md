@@ -109,3 +109,9 @@
 - ORM concept 
 - Key annotations
 - JPA API Overview
+
+===
+
+## Reading List
+– Б. Эккель, "Философия Java", "Thinking in Java"
+– HeadFirst Java.

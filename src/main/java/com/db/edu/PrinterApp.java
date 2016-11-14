@@ -1,44 +1,16 @@
 package com.db.edu;
 
+import com.db.edu.etl.Controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/*
-iuhgkfjgfkj type
-hlkfjhlkfgjh
-flghkjflgkhj
-flkghjflkhgj
-*/
-
-/**
- gdfgjh kdfjghdkfgj kjfhgkd fjgh
-
-*/
 public class PrinterApp {
-    private static final Logger logger = LoggerFactory.getLogger(PrinterApp.class);
+    private static final Logger MY_SUPER_PUPER_LOGGER = LoggerFactory.getLogger(PrinterApp.class);
+    private PrinterApp() {}
 
-    //kjdfgdkfjgh kdfjghdkgjhdk fjgh
-
-    /**
-     * djhdfkjghdfkg kdjgfhdfkg dkfjgh dgf
-     * @param args
-     * @throws yjkty lktyj ltkj
-     */
     public static void main(String... args) {
-        logger.debug("Entering main method with args {}", args);
-        System.out.println( "Hello World!" );
-        System.out.println( "Hello World!" );
-        System.out.println( "Hello World!" );
-        System.out.println( "Hello World!" );
-        System.out.println( "Hello World!" );
-        mySuperMethod();
-        System.out.println( "Hello World!" );
-        System.out.println( "Hello World!" );
-        System.out.println( "Hello World!" );
-    }
+        MY_SUPER_PUPER_LOGGER.debug("Entering main method with args {}", args);
 
-
-    private static void mySuperMethod() {
-        System.out.println("ffffff");
+        System.out.println(Controller.transform(null, null));
     }
 }
