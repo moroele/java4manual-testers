@@ -21,19 +21,24 @@
 - Naming conventions
 - Code style conventions 
 - Static modifier
+### Practice: Application skeleton with main() and new controller methods 
 - Enums
-- Flow control structures
+- Flow control structures: if, switch, for, do, while, foreach
+### Practice: Application skeleton with type switching and structure types loop
 - Primitive types
 - Operators 
 - Casting 
+### Practice: Input structure types include primitives and output ones include aggregate functions
 
 ## 5. JUnit recap (1)
 - Test structure
 - Tests as specifications
+### Practice: Fix current contract with _system_ test
 
 ## 6. Primitive types VS Reference types (2)
 - Heap and Stack
 - Parameter passing styles
+### Basic reference types
 - Arrays 
 - Strings 
 - Wrappers
