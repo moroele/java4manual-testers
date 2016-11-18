@@ -21,7 +21,11 @@
 - Naming conventions
 - Code style conventions 
 - Static modifier
-### Practice: Application skeleton with main() and new controller methods 
+### Practice: ETL Application skeleton with main() and new controller methods 
+1. Stubs for extract() & load()
+2. Add logging for entering and exiting methods
+3. PrinterApp -> EtlApp 
+4. * main(): main algorithm
 - Enums
 - Flow control structures: if, switch, for, do, while, foreach
 ### Practice: Application skeleton with type switching and structure types loop
