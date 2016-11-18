@@ -27,6 +27,7 @@
 3. PrinterApp -> EtlApp 
 4. * main(): main algorithm
 - Enums
+- Static import
 - Flow control structures: if, switch, for, do, while, foreach
 ### Practice: Application skeleton with type switching and structure types loop
 - Primitive types
