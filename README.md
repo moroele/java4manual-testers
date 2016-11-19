@@ -31,7 +31,7 @@
 - Flow control structures: if, switch, for, do, while, foreach
 ### Practice: Application skeleton with type switching and structure types loop
 - Primitive types
-- Operators 
+- Operators: arithmetic (int and float), logic
 - Casting 
 ### Practice: Input structure types include primitives and output ones include aggregate functions
 
@@ -39,14 +39,17 @@
 - Test structure
 - Tests as specifications
 ### Practice: Fix current contract with _system_ test
+### Practice: Fix current contract with _unit_ test
 
 ## 6. Primitive types VS Reference types (2)
 - Heap and Stack
-- Parameter passing styles
+- Parameter passing styles (and side effects recap)
 ### Basic reference types
 - Arrays 
 - Strings 
 - Wrappers
+### Practice: Using strings for parsing input data
+### Practice: Using wrappers for parsing input data
 
 ## 7. Java Syntax Basics for OOP (3)
 - Visibility
