@@ -10,7 +10,7 @@ public class Controller {
 
     public static String[] transform(RecordType recordType, String[] rawDataRecords) {
         int counter = 0;
-        do {
+        while(counter < rawDataRecords.length) {
             counter++;
             switch (recordType) {
                 case EIS1_DATA_FILE:
@@ -30,7 +30,7 @@ public class Controller {
                 default:
                     System.out.println("2222");
             }
-        } while (counter < rawDataRecords.length);
+        }
 
         return null;
     }
