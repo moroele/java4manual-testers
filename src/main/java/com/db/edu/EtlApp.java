@@ -13,8 +13,11 @@ public class EtlApp {
     public static void main(String... args) {
         logger.debug("Entering main method with args {}", args);
 
-        final String extractResult = Controller.extract(RecordType.EIS1_DATA_FILE);
-        final String[] transformResult = Controller.transform(RecordType.EIS1_DATA_FILE,extractResult);
-        Controller.load(transformResult);
+        Controller.load(
+            Controller.transform(
+                RecordType.EIS1_DATA_FILE,
+                Controller.extract(RecordType.EIS1_DATA_FILE)
+            )
+        );
     }
 }
