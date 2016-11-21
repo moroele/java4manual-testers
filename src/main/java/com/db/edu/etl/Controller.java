@@ -8,30 +8,32 @@ import static com.db.edu.etl.RecordType.valueOf;
 public class Controller {
     private static final Logger logger = LoggerFactory.getLogger(Controller.class);
 
-    public static String[] transform(RecordType recordType, String rawDataRecord) {
-        switch (recordType) {
-            case EIS1_DATA_FILE:
-                System.out.println("fffff");
-                System.out.println("fffff");
-                System.out.println("fffff");
-                break;
-            case EIS2_DATA_FILE:
-                System.out.println("ffffffff");
-                break;
-            case EIS3:
-                System.out.println("www");
-                break;
-            case EIS4:
-                System.out.println("hhhhh");
-                break;
-            default:
-                System.out.println("2222");
+    public static String[] transform(RecordType recordType, String[] rawDataRecords) {
+        for (int counter = 0, charCounter = 0; (counter < rawDataRecords.length) && charCounter < 4; counter++, charCounter = 5) {
+            switch (recordType) {
+                case EIS1_DATA_FILE:
+                    System.out.println("fffff");
+                    System.out.println("fffff");
+                    System.out.println("fffff");
+                    break;
+                case EIS2_DATA_FILE:
+                    System.out.println("ffffffff");
+                    break;
+                case EIS3:
+                    System.out.println("www");
+                    break;
+                case EIS4:
+                    System.out.println("hhhhh");
+                    break;
+                default:
+                    System.out.println("2222");
+            }
         }
 
         return null;
     }
 
-    public static String extract(RecordType recordType) {
+    public static String[] extract(RecordType recordType) {
         valueOf("EIS3");
         logger.debug("entering ");
         logger.debug("exit ");
