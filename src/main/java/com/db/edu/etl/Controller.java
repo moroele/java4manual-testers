@@ -9,7 +9,9 @@ public class Controller {
     private static final Logger logger = LoggerFactory.getLogger(Controller.class);
 
     public static String[] transform(RecordType recordType, String[] rawDataRecords) {
-        for (int counter = 0, charCounter = 0; (counter < rawDataRecords.length) && charCounter < 4; counter++, charCounter = 5) {
+        int counter = 0;
+        do {
+            counter++;
             switch (recordType) {
                 case EIS1_DATA_FILE:
                     System.out.println("fffff");
@@ -28,7 +30,7 @@ public class Controller {
                 default:
                     System.out.println("2222");
             }
-        }
+        } while (counter < rawDataRecords.length);
 
         return null;
     }
