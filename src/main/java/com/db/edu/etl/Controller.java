@@ -10,8 +10,15 @@ public class Controller {
 
     public static String[] transform(RecordType recordType, String[] rawDataRecords) {
         int counter = 0;
-        while(counter < rawDataRecords.length) {
+        while(true) {
+            if (counter < rawDataRecords.length) break;
             counter++;
+
+            if ((rawDataRecords[counter] == null) || (rawDataRecords[counter] == "") ) {
+                continue;
+            }
+
+            //region switch
             switch (recordType) {
                 case EIS1_DATA_FILE:
                     System.out.println("fffff");
@@ -30,6 +37,7 @@ public class Controller {
                 default:
                     System.out.println("2222");
             }
+            //endregion
         }
 
         return null;
