@@ -9,3 +9,6 @@
 2016-11-14 09:48:12,218 DEBUG [main] c.d.e.PrinterApp [PrinterApp.java:10] Entering main method with args 1
 2016-11-14 09:56:03,887 DEBUG [main] c.d.e.PrinterApp [PrinterApp.java:10] Entering main method with args 1
 2016-11-14 11:03:28,789 DEBUG [main] c.d.e.PrinterApp [PrinterApp.java:11] Entering main method with args 1
+2016-11-20 21:21:50,076 DEBUG [main] c.d.e.EtlApp [EtlApp.java:14] Entering main method with args 1
+2016-11-20 21:21:50,084 DEBUG [main] c.d.e.e.Controller [Controller.java:17] entering 
+2016-11-20 21:21:50,085 DEBUG [main] c.d.e.e.Controller [Controller.java:18] exit 
