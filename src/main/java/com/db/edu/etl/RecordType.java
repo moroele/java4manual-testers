@@ -1,7 +1,7 @@
 package com.db.edu.etl;
 
 public enum RecordType {
-    EIS1_DATA_FILE, EIS2_DATA_FILE, EIS3
+    EIS1_DATA_FILE, EIS2_DATA_FILE, EIS3, EIS4
 }
 
 class RT2 {
