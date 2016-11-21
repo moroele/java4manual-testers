@@ -15,6 +15,13 @@ public class EtlApp {
     public static void main(String... args) {
         logger.debug("Entering main method with args {}", args);
 
-        load(transform(RecordType.EIS1_DATA_FILE,extract(RecordType.EIS1_DATA_FILE)));
+        for(RecordType currentType : RecordType.values()) {
+            load(
+                transform(
+                    currentType,
+                    extract(currentType)
+                )
+            );
+        }
     }
 }
