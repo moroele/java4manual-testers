@@ -29,7 +29,14 @@
 - Enums
 - Static import
 - Flow control structures: if, switch, for, do, while, foreach
-### Practice: Application skeleton with type switching and structure types loop
+### Practice: Application skeleton with type switching 
+### and structure types loop
+#### DoD:
+- Enum Loop
+- Refactor API: extract -> String[]
+- Refactor transform(String) -> transform(String[])
+- Switch(SYSTEM_TYPE)   
+ 
 - Primitive types
 - Operators: arithmetic (int and float), logic
 - Casting 
