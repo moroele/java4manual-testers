@@ -18,3 +18,5 @@
 2016-11-21 11:16:11,299 DEBUG [main] c.d.e.EtlApp [EtlApp.java:16] Entering main method with args 1
 2016-11-21 11:16:11,307 DEBUG [main] c.d.e.e.Controller [Controller.java:32] entering 
 2016-11-21 11:16:11,307 DEBUG [main] c.d.e.e.Controller [Controller.java:33] exit 
+2016-11-25 12:25:54,086 DEBUG [main] c.d.e.EtlApp [EtlApp.java:18] Entering main method with args 1
+2016-11-25 12:26:18,909 DEBUG [main] c.d.e.EtlApp [EtlApp.java:18] Entering main method with args 1
