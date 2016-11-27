@@ -11,17 +11,21 @@ import static com.db.edu.etl.Controller.transform;
 public class EtlApp {
     private static final Logger logger = LoggerFactory.getLogger(EtlApp.class);
     private EtlApp() {}
+    public static String[] extractResult;
+    public static String[] transformResult;
 
     public static void main(String... args) {
         logger.debug("Entering main method with args {}", args);
-
         for(RecordType currentType : RecordType.values()) {
-            load(
-                transform(
-                    currentType,
-                    extract(currentType)
-                )
-            );
+//            extractResult = extract(currentType);
+//            transformResult = transform(currentType, extractResult);
+//            load(transformResult);
         }
+
+        byte overflowVar = 0;
+        for (int counter = 0; counter < 129; counter++) {
+            overflowVar++;
+        }
+        System.out.println(overflowVar);
     }
 }
