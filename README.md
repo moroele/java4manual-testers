@@ -39,8 +39,9 @@
  
 - Primitive types
 - Operators: arithmetic (int and float), logic
-- Casting 
-### Practice: Input structure types include primitives and output ones include aggregate functions
+- Casting
+- Method overloading
+### Practice: Add overloaded transform() method with data aggregate logging
 
 ## 5. JUnit recap (1)
 - Test structure
