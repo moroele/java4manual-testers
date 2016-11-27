@@ -53,7 +53,7 @@
 - Heap and Stack
 - Parameter passing styles (and side effects recap)
 ### Basic reference types
-- Arrays 
+- Arrays (and varargs)
 - Strings 
 - Wrappers
 ### Practice: Using strings for parsing input data
