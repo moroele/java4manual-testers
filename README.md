@@ -42,6 +42,8 @@
 - Operators: arithmetic (int and float), logic, bitwise
 - Method overloading
 ### Practice: Add overloaded transform() method with data aggregate logging
+- Overloaded transform(..., int[])
+- Average -> logger.info()
 
 ## 5. JUnit recap (1)
 - Test structure
