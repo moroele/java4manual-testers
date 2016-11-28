@@ -14,18 +14,29 @@ public class EtlApp {
     public static String[] extractResult;
     public static String[] transformResult;
 
-    public static void main(String... args) {
+    public strictfp static void main(String... args) {
         logger.debug("Entering main method with args {}", args);
-        for(RecordType currentType : RecordType.values()) {
-//            extractResult = extract(currentType);
-//            transformResult = transform(currentType, extractResult);
-//            load(transformResult);
-        }
 
-        byte overflowVar = 0;
-        for (int counter = 0; counter < 129; counter++) {
-            overflowVar++;
-        }
-        System.out.println(overflowVar);
+        int i1 = 4, i2 = 3;
+        double result = i1 % (float)i2; //-, +, *, /, %
+        char c = 'w';
+        System.out.println(--c); //c++, ++c
+        System.out.println(c); //c++, ++c
+        c += 5; //c = c + 5;
+
+        System.out.println(5 + 5  + "5"); //"tt" + "ddd"
+
+        boolean booleanResult = i1 != i2; //!=, >, <, <=, >=
+        boolean function = f1() | !f2(); //&, |, &&, ||
+        // fopen("fff") or die();
+        System.out.println(4 >>> 33); //|, &, !, ^, >>, >>>, <<
+    }
+
+    private static boolean f2() {
+        return false;
+    }
+
+    private static boolean f1() {
+        return false;
     }
 }

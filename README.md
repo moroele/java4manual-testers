@@ -38,8 +38,8 @@
 - Switch(SYSTEM_TYPE)   
  
 - Primitive types
-- Operators: arithmetic (int and float), logic
 - Casting
+- Operators: arithmetic (int and float), logic, bitwise
 - Method overloading
 ### Practice: Add overloaded transform() method with data aggregate logging
 
