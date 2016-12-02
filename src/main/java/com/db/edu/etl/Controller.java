@@ -4,10 +4,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import static java.lang.Math.round;
+import static java.lang.Math.subtractExact;
 
 
 public class Controller {
     private static final Logger logger = LoggerFactory.getLogger(Controller.class);
+    private static double average; //0.
 
     public static String[] transform(RecordType recordType, String[] rawDataRecords) {
         int counter = 0;
@@ -45,9 +47,19 @@ public class Controller {
     }
 
     public static int[] transform(RecordType recordType, int[] rawDataRecord) {
-        round(4.);
-        logger.info("Average salary : {}");
+        int sum = 0;
+        for (int current : rawDataRecord) {
+            //...
+            sum += current;
+        }
+        average = (double)sum / rawDataRecord.length;
+
+        logger.info("Average salary : {}", average);
         return rawDataRecord;
+    }
+
+    public static double getAverage() {
+        return average;
     }
 
     public static String[] extract(RecordType recordType) {

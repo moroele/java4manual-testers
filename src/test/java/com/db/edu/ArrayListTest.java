@@ -28,6 +28,7 @@ public class ArrayListTest {
         //region Then
         //if (size != ) throw AssertionError
         assertEquals(2, sut.size());
+        sut = null;
         //endregion
     }
 
