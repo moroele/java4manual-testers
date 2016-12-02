@@ -58,15 +58,14 @@
 === Stop point ===
 - Parameter passing styles (and side effects recap)
 - Arrays (and varargs)
-### Practice: Using strings for parsing input data
-### Practice: Using wrappers for parsing input data
 
 ## 7. Java Syntax Basics for OOP (3)
+- Classes
 - Visibility
 - Constructor
-### Practice: Introduce structure {avg, array} for return type of transform()  
+### Practice: Introduce structure {avg, array} for return type of transform() and using strings and wrappers for parsing input data
 - Inheritance 
-- Classes and Interfaces 
+- Interfaces 
 - Polymorphism 
 ### Practice: Introduce polymorphism for variation of EIS types and stable core algorithm
 - Best practices for class design 
