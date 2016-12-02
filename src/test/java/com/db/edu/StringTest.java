@@ -8,13 +8,9 @@ public class StringTest {
     @Test
     public void shouldBeNotSameWhenNewStrings() {
         //Intern
-        String s1 = new String("AB"); //"A"
-        String s2 = new String("AB");
+        Double i1 = 1.; //new Integ()
+        Double i2 = 1.;
 
-//        String s3 = "c";
-//        s3 = s3.toUpperCase();
-//        assertEquals("C", s3);
-
-        assertEquals(false, s1 == s2);
+        assertEquals(true, i1 == i2);
     }
 }
