@@ -7,10 +7,12 @@ import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import static com.db.edu.etl.Controller.extract;
 import static com.db.edu.etl.Controller.load;
 import static com.db.edu.etl.Controller.transform;
+import static org.junit.Assert.assertEquals;
 
 public class EtlApp {
     private static final Logger logger = LoggerFactory.getLogger(EtlApp.class);
@@ -18,15 +20,11 @@ public class EtlApp {
     private EtlApp() {}
 
     public strictfp static void main(String... args) {
-        logger.debug("Entering main method with args {}", args);
-
-        Integer i1 = 500; //auto-boxing + intern (-127..128)
-        Integer i2 = 500; //auto-boxing
-        System.out.println(i1 == i2);
-
-        Controller.transform(
-            RecordType.EIS1_DATA_FILE,
-            new int[] {1,3,4,5,6,1,2,111,3}
+        load(
+            transform(
+                RecordType.EIS1_DATA_FILE,
+                extract(RecordType.EIS1_DATA_FILE)
+            )
         );
     }
 }

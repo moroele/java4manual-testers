@@ -63,7 +63,9 @@
 - Classes
 - Visibility
 - Constructor
-### Practice: Introduce structure {avg, array} for return type of transform() and using strings and wrappers for parsing input data
+### Practice: Introduce structure {avg, array} 
+for return type of transform() and using strings and wrappers 
+for parsing input data
 - Inheritance 
 - Interfaces 
 - Polymorphism 

@@ -9,9 +9,8 @@ import static java.lang.Math.subtractExact;
 
 public class Controller {
     private static final Logger logger = LoggerFactory.getLogger(Controller.class);
-    private static double average; //0.
 
-    public static String[] transform(RecordType recordType, String[] rawDataRecords) {
+    public static DTO transform(RecordType recordType, String[] rawDataRecords) {
         int counter = 0;
         while(true) {
             if (counter < rawDataRecords.length) break;
@@ -46,16 +45,20 @@ public class Controller {
         return null;
     }
 
-    public static int[] transform(RecordType recordType, int[] rawDataRecord) {
+    public static DTO transform(RecordType recordType, int[] rawDataRecord) {
         int sum = 0;
+        double average; //0.
         for (int current : rawDataRecord) {
             //...
             sum += current;
         }
         average = (double)sum / rawDataRecord.length;
 
-        logger.info("Average salary : {}", average);
-        return rawDataRecord;
+
+        return new DTO(
+            rawDataRecord,
+            average
+        );
     }
 
     public static double getAverage() {
@@ -68,8 +71,8 @@ public class Controller {
         return null;
     }
 
-    public static void load(String[] structureToSave) {
-        //.....
+    public static void load(DTO structureToSave) {
+        structureToSave.
     }
 
 }
