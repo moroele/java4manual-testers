@@ -55,7 +55,6 @@
 ### Basic reference types
 - Strings 
 - Wrappers
-=== Stop point ===
 - Parameter passing styles (and side effects recap)
 - Arrays (and varargs)
 
@@ -63,9 +62,8 @@
 - Classes
 - Visibility
 - Constructor
-### Practice: Introduce structure {avg, array} 
-for return type of transform() and using strings and wrappers 
-for parsing input data
+### Practice: Introduce structure {avg, array} for return type of transform() and using strings and wrappers for parsing input data
+=== Stop point ===
 - Inheritance 
 - Interfaces 
 - Polymorphism 
