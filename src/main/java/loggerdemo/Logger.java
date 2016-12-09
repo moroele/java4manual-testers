@@ -15,23 +15,17 @@ public class Logger {
     }
 }
 
-abstract class LoggerSaver {
-    public abstract void save(String message);
-    public void foo() {}
+interface LoggerSaver {
+    void save(String message);
 }
 
-class FileLoggerSaver extends LoggerSaver {
+class FileLoggerSaver  implements LoggerSaver {
     @Override
     public void save(String message) {
         System.out.println("FileSaver");
     }
 
-    @Override
-    public void foo() {
-        //..
-        super.foo();
-        //..
-    }
+    public void saveToFile() {}
 }
 
 class LoggerFilter {
