@@ -2,7 +2,7 @@ package loggerdemo;
 
 public class Logger {
     private LoggerFilter filter = new LoggerFilter();
-    private LoggerSaver saver = new FileLoggerSaver();
+    private LoggerSaver saver = LoggerSaverFactory.create();
 
     public void log(String message) {
         if (filter.filter(message)) {
