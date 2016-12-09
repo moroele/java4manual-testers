@@ -2,8 +2,20 @@ package com.db.edu.etl;
 
 //POJO
 public class DTO {
-    private int[] transformationResult;
+    private int[] transformationResult = ;
     private double average;
+
+    public DTO() {
+        this(null, 0.0);
+    }
+
+    public DTO(int[] transformationResult) {
+        this(transformationResult, 0.0);
+    }
+
+    public DTO(double average) {
+        this(null, average);
+    }
 
     public DTO(int[] transformationResult, double average) {
         this.transformationResult = transformationResult;
@@ -20,15 +32,8 @@ public class DTO {
 }
 
 
-
-
-class Woman {
-
-    public int getAge() {
-        return random(0, 25);
-    }
-
-    public void setAge(int age) {
-        this.age = age;
+class DtoDemo {
+    public static void main(String[] args) {
+        new DTO(0.0);
     }
 }
