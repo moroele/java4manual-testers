@@ -2,23 +2,35 @@ package loggerdemo;
 
 public class Logger {
     private LoggerFilter filter = new LoggerFilter();
-    private LoggerSaver saver = LoggerSaverFactory.create();
+    private LoggerSaver saver;
+
+    public Logger(LoggerSaver saver) { //DI
+        this.saver = saver;
+    }
 
     public void log(String message) {
         if (filter.filter(message)) {
-            saver.saveToFile(message);
+            saver.save(message);
         }
     }
 }
 
 abstract class LoggerSaver {
-    public abstract void saveToFile(String message);
+    public abstract void save(String message);
+    public void foo() {}
 }
 
 class FileLoggerSaver extends LoggerSaver {
     @Override
-    public void saveToFile(String message) {
+    public void save(String message) {
         System.out.println("FileSaver");
+    }
+
+    @Override
+    public void foo() {
+        //..
+        super.foo();
+        //..
     }
 }
 
@@ -31,6 +43,6 @@ class LoggerFilter {
 
 class LoggerTest {
     public static void main(String[] args) {
-        new Logger().log("qqq");
+        new Logger(new FileLoggerSaver()).log("qqq");
     }
 }
