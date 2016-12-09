@@ -2,7 +2,7 @@ package com.db.edu.etl;
 
 //POJO
 public class DTO {
-    private int[] transformationResult = ;
+    private int[] transformationResult;
     private double average;
 
     public DTO() {

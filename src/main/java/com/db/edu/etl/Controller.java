@@ -62,7 +62,7 @@ public class Controller {
     }
 
     public static double getAverage() {
-        return average;
+        return 0;
     }
 
     public static String[] extract(RecordType recordType) {
@@ -72,7 +72,6 @@ public class Controller {
     }
 
     public static void load(DTO structureToSave) {
-        structureToSave.
     }
 
 }
