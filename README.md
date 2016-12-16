@@ -63,10 +63,10 @@
 - Visibility
 - Constructor
 ### Practice: Introduce structure {avg, array} for return type of transform() and using strings and wrappers for parsing input data
-=== Stop point ===
 - Inheritance 
 - Interfaces 
 - Polymorphism 
+=== Stop point ===
 ### Practice: Introduce polymorphism for variation of EIS types and stable core algorithm
 - Best practices for class design 
 - Design quality criteria 
