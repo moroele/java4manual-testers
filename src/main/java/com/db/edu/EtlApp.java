@@ -15,16 +15,11 @@ import static com.db.edu.etl.Controller.transform;
 import static org.junit.Assert.assertEquals;
 
 public class EtlApp {
-    private static final Logger logger = LoggerFactory.getLogger(EtlApp.class);
-
-    private EtlApp() {}
+    private int i;
 
     public strictfp static void main(String... args) {
-        load(
-            transform(
-                RecordType.EIS1_DATA_FILE,
-                extract(RecordType.EIS1_DATA_FILE)
-            )
-        );
+        new EtlApp();
     }
 }
+
+

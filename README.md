@@ -139,6 +139,7 @@
 ## Reading List
 – Б. Эккель, "Философия Java", "Thinking in Java"
 – HeadFirst Java.
+- http://tinyurl.com/skilltrekreadinglist
 
 ## Git settings for push
 ```
