@@ -21,7 +21,9 @@
 - Naming conventions
 - Code style conventions 
 - Static modifier
+
 ### Practice: ETL Application skeleton with main() and new controller methods 
+
 1. Stubs for extract() & load()
 2. Add logging for entering and exiting methods
 3. PrinterApp -> EtlApp 
@@ -29,6 +31,7 @@
 - Enums
 - Static import
 - Flow control structures: if, switch, for, do, while, foreach
+
 ### Practice: Application skeleton with type switching 
 ### and structure types loop
 #### DoD:
@@ -41,6 +44,7 @@
 - Casting
 - Operators: arithmetic (int and float), logic, bitwise
 - Method overloading
+
 ### Practice: Add overloaded transform() method with data aggregate logging
 - Overloaded transform(..., int[])
 - Average -> logger.info()
@@ -48,10 +52,12 @@
 ## 5. JUnit recap (1)
 - Test structure
 - Tests as specifications
+
 ### Practice: Fix current contract with _unit_ test
 
 ## 6. Primitive types VS Reference types (2)
 - Heap and Stack
+
 ### Basic reference types
 - Strings 
 - Wrappers
@@ -62,11 +68,12 @@
 - Classes
 - Visibility
 - Constructor
+
 ### Practice: Introduce structure {avg, array} for return type of transform() and using strings and wrappers for parsing input data
 - Inheritance 
 - Interfaces 
 - Polymorphism 
-=== Stop point ===
+
 ### Practice: Introduce polymorphism for variation of EIS types and stable core algorithm
 - Best practices for class design 
 - Design quality criteria 
@@ -139,8 +146,8 @@
 ===
 
 ## Reading List
-– Б. Эккель, "Философия Java", "Thinking in Java"
-– HeadFirst Java.
+- Б. Эккель, "Философия Java", "Thinking in Java"
+- HeadFirst Java.
 - http://tinyurl.com/skilltrekreadinglist
 
 ## Git settings for push
