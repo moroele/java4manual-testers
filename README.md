@@ -32,14 +32,12 @@
 - Static import
 - Flow control structures: if, switch, for, do, while, foreach
 
-### Practice: Application skeleton with type switching 
-### and structure types loop
+### Practice: Application skeleton with type switching and structure types loop
 #### DoD:
 - Enum Loop
 - Refactor API: extract -> String[]
 - Refactor transform(String) -> transform(String[])
-- Switch(SYSTEM_TYPE)   
- 
+- Switch(SYSTEM_TYPE)
 - Primitive types
 - Casting
 - Operators: arithmetic (int and float), logic, bitwise
@@ -85,7 +83,7 @@
 - Exception types in Java
 - Best practices for exception type system design 
 
-## 9. System Library (1)
+## 9. System Library (3)
 - j.l.System 
 - j.l.Object
 - Collections API Overview
@@ -97,17 +95,17 @@
 - Concurrency issues overview
 - Best practices for multithreaded design 
 
-## Spring framework overview
+## Spring framework overview (1)
 
 ## 11. Data interaction with flat txt files (2)
 - j.i.File
 - Java IO Streams Overview
 - Apache Commons IO library
 
-## 12. Data interaction with CSV txt files (1)
+## 12. Data interaction with CSV txt files (2)
 - Apache Commons CSV library
 
-## 13. Data interaction with XLS files (1)
+## 13. Data interaction with XLS files (2)
 - Apache POI library
 
 ## 14. Data interaction with XML files (3)
@@ -118,7 +116,7 @@
 - Java API for DOM
 - OXM with JAXB overview
 
-## 15. Data integration with JSON files (1)
+## 15. Data integration with JSON files (2)
 - JSON recap
 - Jackson library
 
@@ -130,15 +128,13 @@
 - Inserting and updating data with Statement and PreparedStatement
 - Fetching data with ResultSet
 
-## 17. Buffer (3hr)
-
-## 18. DB interaction with Spring jdbcTemplate *
+## 17. DB interaction with Spring jdbcTemplate *
 - Intro to Spring
 - Spring configuration for dataSource
 - JdbcTemplate and RowMapper
 - DAO pattern
 
-## 19. DB Interaction with JPA *
+## 18. DB Interaction with JPA *
 - ORM concept 
 - Key annotations
 - JPA API Overview
