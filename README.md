@@ -72,6 +72,8 @@
 - Interfaces 
 - Polymorphism 
 
+### Demo: Java App with design
+
 ### Practice: Introduce polymorphism for variation of EIS types and stable core algorithm
 - Best practices for class design 
 - Design quality criteria 
