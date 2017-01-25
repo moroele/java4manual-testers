@@ -21,34 +21,60 @@
 - Naming conventions
 - Code style conventions 
 - Static modifier
-### Practice: Application skeleton with main() and new controller methods 
+
+### Practice: ETL Application skeleton with main() and new controller methods 
+
+1. Stubs for extract() & load()
+2. Add logging for entering and exiting methods
+3. PrinterApp -> EtlApp 
+4. * main(): main algorithm
 - Enums
+- Static import
 - Flow control structures: if, switch, for, do, while, foreach
+
 ### Practice: Application skeleton with type switching and structure types loop
+#### DoD:
+- Enum Loop
+- Refactor API: extract -> String[]
+- Refactor transform(String) -> transform(String[])
+- Switch(SYSTEM_TYPE)
 - Primitive types
-- Operators 
-- Casting 
-### Practice: Input structure types include primitives and output ones include aggregate functions
+- Casting
+- Operators: arithmetic (int and float), logic, bitwise
+- Method overloading
+
+### Practice: Add overloaded transform() method with data aggregate logging
+- Overloaded transform(..., int[])
+- Average -> logger.info()
 
 ## 5. JUnit recap (1)
 - Test structure
 - Tests as specifications
-### Practice: Fix current contract with _system_ test
+
+### Practice: Fix current contract with _unit_ test
 
 ## 6. Primitive types VS Reference types (2)
 - Heap and Stack
-- Parameter passing styles
+
 ### Basic reference types
-- Arrays 
 - Strings 
 - Wrappers
+- Parameter passing styles (and side effects recap)
+- Arrays (and varargs)
 
 ## 7. Java Syntax Basics for OOP (3)
+- Classes
 - Visibility
-- Constructor 
+- Constructor
+
+### Practice: Introduce structure {avg, array} for return type of transform() and using strings and wrappers for parsing input data
 - Inheritance 
-- Classes and Interfaces 
+- Interfaces 
 - Polymorphism 
+
+### Demo: Java App with design
+
+### Practice: Introduce polymorphism for variation of EIS types and stable core algorithm
 - Best practices for class design 
 - Design quality criteria 
 
@@ -59,7 +85,7 @@
 - Exception types in Java
 - Best practices for exception type system design 
 
-## 9. System Library (1)
+## 9. System Library (3)
 - j.l.System 
 - j.l.Object
 - Collections API Overview
@@ -71,15 +97,17 @@
 - Concurrency issues overview
 - Best practices for multithreaded design 
 
+## Spring framework overview (1)
+
 ## 11. Data interaction with flat txt files (2)
 - j.i.File
 - Java IO Streams Overview
 - Apache Commons IO library
 
-## 12. Data interaction with CSV txt files (1)
+## 12. Data interaction with CSV txt files (2)
 - Apache Commons CSV library
 
-## 13. Data interaction with XLS files (1)
+## 13. Data interaction with XLS files (2)
 - Apache POI library
 
 ## 14. Data interaction with XML files (3)
@@ -90,7 +118,7 @@
 - Java API for DOM
 - OXM with JAXB overview
 
-## 15. Data integration with JSON files (1)
+## 15. Data integration with JSON files (2)
 - JSON recap
 - Jackson library
 
@@ -102,15 +130,13 @@
 - Inserting and updating data with Statement and PreparedStatement
 - Fetching data with ResultSet
 
-## 17. Buffer (3hr)
-
-## 18. DB interaction with Spring jdbcTemplate *
+## 17. DB interaction with Spring jdbcTemplate *
 - Intro to Spring
 - Spring configuration for dataSource
 - JdbcTemplate and RowMapper
 - DAO pattern
 
-## 19. DB Interaction with JPA *
+## 18. DB Interaction with JPA *
 - ORM concept 
 - Key annotations
 - JPA API Overview
@@ -118,8 +144,9 @@
 ===
 
 ## Reading List
-– Б. Эккель, "Философия Java", "Thinking in Java"
-– HeadFirst Java.
+- Б. Эккель, "Философия Java", "Thinking in Java"
+- HeadFirst Java.
+- http://tinyurl.com/skilltrekreadinglist
 
 ## Git settings for push
 ```
